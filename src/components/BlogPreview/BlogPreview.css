@@ -1,0 +1,12 @@
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.blog-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}

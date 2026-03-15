@@ -1,0 +1,7 @@
+:root {
+  --primary-blue: #007bff;
+  --light-bg: #f8f9fa;
+  --dark-text: #1f2d3d;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --section-padding: 80px 0;
+}

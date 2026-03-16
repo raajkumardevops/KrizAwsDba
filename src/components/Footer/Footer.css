@@ -1,0 +1,26 @@
+.custom-footer {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.04);
+  transition: all 0.45s ease-in-out;
+}
+
+.custom-footer:hover {
+  box-shadow: 0 -6px 22px rgba(0, 0, 0, 0.06);
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #0d6efd;
+  transition: all 0.45s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #084298;
+}
+
+.footer-location {
+  color: #6c757d;
+}

@@ -1,0 +1,18 @@
+.summary-card {
+  background: white;
+  border-radius: 16px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  transition: all 0.45s ease-in-out;
+  cursor: pointer;
+  height: 100%;
+}
+
+.summary-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.summary-card:active {
+  transform: scale(0.98);
+}

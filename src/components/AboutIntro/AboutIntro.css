@@ -1,0 +1,30 @@
+.about-intro-section {
+  min-height: 85vh;
+}
+
+.about-visual-card {
+  background: white;
+  border-radius: 18px;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+  transition: all 0.45s ease-in-out;
+  cursor: pointer;
+}
+
+.about-visual-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+.about-visual-card:active {
+  transform: scale(0.98);
+}
+
+.metric-block {
+  margin-bottom: 28px;
+}
+
+.metric-block:last-child {
+  margin-bottom: 0;
+}

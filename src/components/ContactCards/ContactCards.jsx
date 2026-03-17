@@ -6,8 +6,8 @@ function ContactCards() {
     {
       icon: <FaEnvelope size={28} className="text-primary" />,
       title: "Email",
-      value: "kriz1111@gmail.com",
-      link: "mailto:kriz1111@gmail.com"
+      value: "raajkumar.devops@gmail.com",
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=raajkumar.devops@gmail.com"
     },
     {
       icon: <FaLinkedin size={28} className="text-primary" />,
@@ -23,6 +23,14 @@ function ContactCards() {
     }
   ];
 
+        const handleClick = (item) => {
+        if (item.title === "Email" || item.title === "LinkedIn") {
+            window.open(item.link, "_blank");
+        } else {
+            window.location.href = item.link;
+        }
+        };
+
   return (
     <section className="contact-cards-section py-5">
       <div className="container">
@@ -36,23 +44,19 @@ function ContactCards() {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <a
-                href={item.link}
-                target={item.title === "LinkedIn" ? "_blank" : ""}
-                rel="noreferrer"
-                className="contact-card-link"
+              <div
+                className="contact-card text-center contact-card-link"
+                onClick={() => handleClick(item)}
               >
-                <div className="contact-card text-center">
 
-                  <div className="contact-icon-wrapper">
-                    {item.icon}
-                  </div>
-
-                  <h5>{item.title}</h5>
-                  <p>{item.value}</p>
-
+                <div className="contact-icon-wrapper">
+                  {item.icon}
                 </div>
-              </a>
+
+                <h5>{item.title}</h5>
+                <p>{item.value}</p>
+
+              </div>
             </div>
           ))}
 

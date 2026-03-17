@@ -25,3 +25,33 @@
 .navbar-brand:hover {
   transform: translateY(-2px);
 }
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.97);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
+    z-index: 999;
+  }
+
+  .navbar-nav {
+    gap: 8px !important;
+  }
+
+  .nav-link {
+    padding: 12px 0;
+    font-size: 1rem;
+    display: block;
+  }
+
+  .custom-navbar {
+    position: relative;
+  }
+}

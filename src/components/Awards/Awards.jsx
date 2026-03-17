@@ -22,7 +22,7 @@ function Awards() {
       <div className="container">
 
         <div className="awards-heading text-center mb-5" data-aos="fade-up">
-          <h2 className="fw-bold">Awards & Recognition</h2>
+          <h2 className="fw-bold"><span className="text-primary">Awards</span> & Recognition</h2>
           <p className="text-muted">
             Key achievements earned across enterprise delivery programs.
           </p>
@@ -40,7 +40,7 @@ function Awards() {
               <div className="award-card text-center">
 
                 <div className="award-icon-wrapper">
-                  <FaAward size={28} className="text-primary" />
+                  <FaAward size={28} className="" />
                 </div>
 
                 <h5>{award.title}</h5>

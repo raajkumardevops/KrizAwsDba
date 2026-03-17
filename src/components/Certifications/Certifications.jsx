@@ -28,13 +28,23 @@ function Certifications() {
               data-aos="fade-up"
               data-aos-delay={index * 100}
             >
-              <div className="cert-card text-center">
+              <div className="certificate-card">
 
-                <div className="cert-icon-wrapper">
-                  <FaCertificate size={28} className="text-primary" />
+                <div className="certificate-logo">
+                  <FaCertificate size={28} className="" />
                 </div>
 
-                <h5>{cert}</h5>
+                <div className="certificate-title">
+                  Certificate
+                </div>
+
+                <div className="certificate-subtitle">
+                  Recognized Professional Credential
+                </div>
+
+                <div className="certificate-name">
+                  {cert}
+                </div>
 
               </div>
             </div>

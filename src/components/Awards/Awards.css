@@ -16,14 +16,14 @@
 }
 
 .award-card {
-  background: #f8f9fc;
-  border-radius: 18px;
+  background: linear-gradient(135deg, #fffdf8, #f8f4ec);
+  border: 2px solid #c8b08f;
+  border-radius: 20px;
   padding: 40px 28px;
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
   transition: all 0.45s ease-in-out;
   cursor: pointer;
   height: 100%;
-  border: 1px solid rgba(13, 110, 253, 0.05);
 }
 
 .award-card:hover {
@@ -41,6 +41,7 @@
   margin: 0 auto 22px;
   border-radius: 50%;
   background: rgba(13, 110, 253, 0.08);
+  color: #debd19;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +58,7 @@
   font-weight: 600;
   font-size: 1.1rem;
   line-height: 1.5;
+  color: #8b5e3c;
 }
 
 .award-card p {
@@ -64,6 +66,7 @@
   font-size: 0.95rem;
   line-height: 1.7;
   margin-bottom: 0;
+  
 }
 
 /* Tablet */
@@ -130,6 +133,7 @@
   .award-icon-wrapper {
     width: 58px;
     height: 58px;
+    
   }
 
   .award-card h5 {

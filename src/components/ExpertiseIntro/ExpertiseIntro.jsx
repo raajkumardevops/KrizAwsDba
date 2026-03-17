@@ -9,7 +9,7 @@ function ExpertiseIntro() {
           className="fw-bold expertise-main-title mb-3"
           data-aos="fade-up"
         >
-          Core Technical Expertise
+         <span className="text-primary">Core</span> Technical Expertise
         </h2>
 
         <p

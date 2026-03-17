@@ -1,7 +1,7 @@
-import Navbar from "../Components/Navbar/Navbar";
-import ContactIntro from "../Components/ContactIntro/ContactIntro";
-import Footer from "../Components/Footer/Footer";
-import ContactCards from "../Components/ContactCards/ContactCards";
+import Navbar from "../components/Navbar/Navbar";
+import ContactIntro from "../components/ContactIntro/ContactIntro";
+import Footer from "../components/Footer/Footer";
+import ContactCards from "../components/ContactCards/ContactCards";
 
 
 function Contact() {

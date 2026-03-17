@@ -1,10 +1,10 @@
-import Navbar from "../Components/Navbar/Navbar";
+import Navbar from "../components/Navbar/Navbar";
 import ExpertiseIntro from "../Components/ExpertiseIntro/ExpertiseIntro";
-import Footer from "../Components/Footer/Footer";
-import ExpertiseCards from "../Components/ExpertiseCards/ExpertiseCards";
-import Awards from "../Components/Awards/Awards";
-import Timeline from "../Components/Timeline/Timeline";
-import Certifications from "../Components/Certifications/Certifications";
+import Footer from "../components/Footer/Footer";
+import ExpertiseCards from "../components/ExpertiseCards/ExpertiseCards";
+import Awards from "../components/Awards/Awards";
+import Timeline from "../components/Timeline/Timeline";
+import Certifications from "../components/Certifications/Certifications";
 
 function Expertise() {
   return (

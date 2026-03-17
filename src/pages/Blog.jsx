@@ -1,7 +1,7 @@
-import Navbar from "../Components/Navbar/Navbar";
-import BlogIntro from "../Components/BlogIntro/BlogIntro";
-import Footer from "../Components/Footer/Footer";
-import BlogCards from "../Components/BlogCards/BlogCards";
+import Navbar from "../components/Navbar/Navbar";
+import BlogIntro from "../components/BlogIntro/BlogIntro";
+import Footer from "../components/Footer/Footer";
+import BlogCards from "../components/BlogCards/BlogCards";
 
 function Blog() {
   return (

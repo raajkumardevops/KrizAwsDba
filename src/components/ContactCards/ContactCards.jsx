@@ -6,8 +6,8 @@ function ContactCards() {
     {
       icon: <FaEnvelope size={28} className="text-primary" />,
       title: "Email",
-      value: "raajkumar.devops@gmail.com",
-      link: "https://mail.google.com/mail/?view=cm&fs=1&to=raajkumar.devops@gmail.com"
+      value: "kriz1111@gmail.com",
+      link: "mailto:kriz1111@gmail.com"
     },
     {
       icon: <FaLinkedin size={28} className="text-primary" />,
@@ -23,13 +23,13 @@ function ContactCards() {
     }
   ];
 
-        const handleClick = (item) => {
-        if (item.title === "Email" || item.title === "LinkedIn") {
-            window.open(item.link, "_blank");
-        } else {
-            window.location.href = item.link;
-        }
-        };
+  const handleClick = (item) => {
+    if (item.title === "Email") {
+      window.location.href = item.link;
+    } else {
+      window.open(item.link, item.title === "LinkedIn" ? "_blank" : "_self");
+    }
+  };
 
   return (
     <section className="contact-cards-section py-5">

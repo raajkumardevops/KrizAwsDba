@@ -29,8 +29,13 @@ function GlobalImpact() {
             data-aos-delay={index * 100}
           >
             <div className="impact-card text-center">
-              <FaGlobeAsia size={36} className="text-primary mb-3" />
+
+              <div className="impact-icon-wrapper">
+                <FaGlobeAsia size={30} className="text-primary" />
+              </div>
+
               <h5>{country}</h5>
+
             </div>
           </div>
         ))}

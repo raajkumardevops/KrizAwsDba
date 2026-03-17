@@ -1,5 +1,6 @@
 import { ReactTyped } from "react-typed";
 import "./Hero.css";
+import { Link } from "react-router-dom";
 import HeroImage from "../../assets/images/dashboard_img.avif"
 function Hero() {
   return (
@@ -22,13 +23,14 @@ function Hero() {
           </p>
 
           <div className="mt-4" data-aos="fade-right" data-aos-delay="250">
-            <button className="custom-primary-btn me-3">
-                Explore Expertise
-                </button>
+          <Link to="/expertise" className="custom-primary-btn me-3 text-decoration-none">
+            Explore Expertise
+          </Link>
 
-                <button className="custom-outline-btn">
+          <Link to="/contact" className="custom-outline-btn text-decoration-none">
                 Contact Now
-            </button>
+          </Link>
+
           </div>
 
           <div className="mt-4 text-muted" data-aos="fade-right" data-aos-delay="400">

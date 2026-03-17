@@ -9,7 +9,8 @@ function Navbar() {
       data-aos-delay="100"
     >
       <div className="container">
-        <Link className="navbar-brand fw-bold text-primary" to="/">
+
+        <Link className="navbar-brand fw-bold text-primary custom-brand" to="/">
           KrizAWSDBA
         </Link>
 
@@ -57,6 +58,7 @@ function Navbar() {
 
           </ul>
         </div>
+
       </div>
     </nav>
   );

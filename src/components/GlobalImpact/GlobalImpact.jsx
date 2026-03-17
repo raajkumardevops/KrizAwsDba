@@ -12,8 +12,9 @@ function GlobalImpact() {
   ];
 
   return (
-    <section className="container py-5">
-      <div className="text-center mb-5" data-aos="fade-up">
+    <section className="container py-5 global-impact-section">
+
+      <div className="global-impact-heading text-center mb-5" data-aos="fade-up">
         <h2 className="fw-bold">Global Delivery Impact</h2>
         <p className="text-muted">
           International transformation experience across enterprise platforms.
@@ -40,6 +41,7 @@ function GlobalImpact() {
           </div>
         ))}
       </div>
+
     </section>
   );
 }

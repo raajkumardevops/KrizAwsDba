@@ -5,12 +5,12 @@ function AboutIntro() {
     <section className="container py-5">
       <div className="row align-items-center about-intro-section">
 
-        <div className="col-lg-6" data-aos="fade-right">
+        <div className="col-lg-6 about-text-content" data-aos="fade-right">
 
-          <h3 className="text-primary fw-semibold mb-3">About</h3>
+          <h3 className="text-primary fw-semibold mb-3 about-label">About</h3>
 
           <h1
-            className="fw-bold mb-4"
+            className="about-main-title fw-bold mb-4"
             data-aos="fade-right"
             data-aos-delay="200"
           >
@@ -18,7 +18,7 @@ function AboutIntro() {
           </h1>
 
           <p
-            className="text-muted lead"
+            className="text-muted lead about-lead"
             data-aos="fade-right"
             data-aos-delay="300"
           >
@@ -28,7 +28,7 @@ function AboutIntro() {
           </p>
 
           <p
-            className="text-muted"
+            className="text-muted about-paragraph"
             data-aos="fade-right"
             data-aos-delay="500"
           >
@@ -38,7 +38,7 @@ function AboutIntro() {
           </p>
 
           <p
-            className="text-muted"
+            className="text-muted about-paragraph"
             data-aos="fade-right"
             data-aos-delay="700"
           >

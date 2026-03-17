@@ -1,3 +1,19 @@
+.global-impact-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.global-impact-heading h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.global-impact-heading p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .impact-card {
   background: white;
   border-radius: 18px;
@@ -38,4 +54,72 @@
 .impact-card h5 {
   margin-bottom: 0;
   font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .global-impact-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .global-impact-heading h2 {
+    font-size: 2rem;
+  }
+
+  .impact-card {
+    padding: 32px 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .global-impact-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .global-impact-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .global-impact-heading p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .impact-card {
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+
+  .impact-icon-wrapper {
+    width: 64px;
+    height: 64px;
+  }
+
+  .impact-card h5 {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .global-impact-heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .impact-card {
+    padding: 24px 18px;
+  }
+
+  .impact-icon-wrapper {
+    width: 58px;
+    height: 58px;
+  }
+
+  .impact-card h5 {
+    font-size: 0.96rem;
+  }
 }

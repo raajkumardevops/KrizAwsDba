@@ -7,7 +7,8 @@
   cursor: pointer;
   transition: all 0.4s ease-in-out !important;
   transform: translateY(0);
-  margin-right:10px;
+  margin-right: 10px;
+  display: inline-block;
 }
 
 .custom-primary-btn:hover {
@@ -30,6 +31,7 @@
   cursor: pointer;
   transition: all 0.4s ease-in-out !important;
   transform: translateY(0);
+  display: inline-block;
 }
 
 .custom-outline-btn:hover {
@@ -62,7 +64,7 @@
   transform: scale(0.98);
 }
 
-/* ---------- MOBILE RESPONSIVE ---------- */
+/* ---------- TABLET ---------- */
 
 @media (max-width: 991px) {
   .hero-section {
@@ -92,7 +94,7 @@
   }
 }
 
-/* ---------- MOBILE SMALL DEVICES ---------- */
+/* ---------- MOBILE ---------- */
 
 @media (max-width: 768px) {
   .hero-section {
@@ -100,51 +102,81 @@
     padding-bottom: 35px;
   }
 
-  .hero-section h1 {
-    font-size: 2.5rem;
+  .hero-content {
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
     line-height: 1.2;
+    margin-bottom: 14px;
   }
 
-  .hero-section h3 {
+  .hero-subtitle {
     font-size: 1.7rem;
+    margin-bottom: 18px;
   }
 
-  .hero-section p {
+  .hero-description {
     font-size: 1rem;
     line-height: 1.7;
-  }
-
-  .custom-primary-btn,
-  .custom-outline-btn {
-    width: 100%;
-    margin-bottom: 14px;
-    padding: 12px 20px;
-    font-size: 1rem;
+    margin: 0 auto 24px;
   }
 
   .hero-buttons {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .custom-primary-btn,
+  .custom-outline-btn {
+    width: auto;
+    min-width: 150px;
+    padding: 10px 18px;
+    font-size: 0.95rem;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero-stats {
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-top: 20px;
   }
 
   .hero-image {
-    margin-top: 30px;
+    margin-top: 28px;
     border-radius: 14px;
   }
 }
 
-/* ---------- VERY SMALL DEVICES ---------- */
+/* ---------- SMALL MOBILE ---------- */
 
 @media (max-width: 480px) {
-  .hero-section h1 {
-    font-size: 2.2rem;
+  .hero-title {
+    font-size: 2rem;
   }
 
-  .hero-section h3 {
+  .hero-subtitle {
     font-size: 1.5rem;
   }
 
-  .hero-section p {
+  .hero-description {
     font-size: 0.95rem;
+  }
+
+  .custom-primary-btn,
+  .custom-outline-btn {
+    min-width: 140px;
+    padding: 9px 16px;
+    font-size: 0.9rem;
+  }
+
+  .hero-stats {
+    font-size: 0.9rem;
   }
 }

@@ -24,7 +24,7 @@ function BlogCards() {
     <section className="blog-cards-section py-5">
       <div className="container">
 
-        <div className="row g-4">
+        <div className="row g-4 justify-content-center">
 
           {blogs.map((item, index) => (
             <div

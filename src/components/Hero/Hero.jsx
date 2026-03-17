@@ -8,7 +8,11 @@ function Hero() {
     <section className="hero-section container py-5">
       <div className="row align-items-center hero-row">
 
-        <div className="col-lg-6 hero-left" data-aos="fade-right" data-aos-delay="150">
+        <div
+          className="col-lg-6 hero-left hero-content"
+          data-aos="fade-right"
+          data-aos-delay="150"
+        >
 
           <h1 className="fw-bold hero-title">KrizAWSDBA</h1>
 
@@ -22,11 +26,18 @@ function Hero() {
             />
           </h3>
 
-          <p className="lead text-muted hero-description" data-aos="fade-right">
+          <p
+            className="lead text-muted hero-description"
+            data-aos="fade-right"
+          >
             Architecting secure cloud, database, and AI platforms for enterprise-scale financial systems.
           </p>
 
-          <div className="hero-buttons mt-4" data-aos="fade-right" data-aos-delay="250">
+          <div
+            className="hero-buttons mt-4"
+            data-aos="fade-right"
+            data-aos-delay="250"
+          >
 
             <Link
               to="/expertise"
@@ -45,7 +56,7 @@ function Hero() {
           </div>
 
           <div
-            className="hero-meta mt-4 text-muted"
+            className="hero-meta mt-4 text-muted hero-stats"
             data-aos="fade-right"
             data-aos-delay="400"
           >

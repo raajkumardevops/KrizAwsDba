@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar/Navbar";
-import ExpertiseIntro from "../Components/ExpertiseIntro/ExpertiseIntro";
+import ExpertiseIntro from "../components/ExpertiseIntro/ExpertiseIntro";
 import Footer from "../components/Footer/Footer";
 import ExpertiseCards from "../components/ExpertiseCards/ExpertiseCards";
 import Awards from "../components/Awards/Awards";

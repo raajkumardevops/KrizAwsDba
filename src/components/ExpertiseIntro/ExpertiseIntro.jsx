@@ -6,14 +6,14 @@ function ExpertiseIntro() {
       <div className="container text-center">
 
         <h2
-          className="fw-bold mb-3"
+          className="fw-bold expertise-main-title mb-3"
           data-aos="fade-up"
         >
           Core Technical Expertise
         </h2>
 
         <p
-          className="text-muted lead mb-4"
+          className="text-muted lead expertise-lead mb-4"
           data-aos="fade-up"
           data-aos-delay="200"
         >

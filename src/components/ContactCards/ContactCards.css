@@ -44,15 +44,77 @@
 .contact-card h5 {
   margin-bottom: 14px;
   font-weight: 600;
+  font-size: 1.1rem;
 }
 
 .contact-card p {
   color: #6c757d;
   margin-bottom: 0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  word-break: break-word;
 }
 
 .contact-card-link {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .contact-cards-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .contact-card {
+    padding: 34px 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-cards-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .contact-card {
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .contact-icon-wrapper {
+    width: 64px;
+    height: 64px;
+  }
+
+  .contact-card h5 {
+    font-size: 1rem;
+  }
+
+  .contact-card p {
+    font-size: 0.92rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 26px 18px;
+  }
+
+  .contact-icon-wrapper {
+    width: 58px;
+    height: 58px;
+  }
+
+  .contact-card h5 {
+    font-size: 0.96rem;
+  }
+
+  .contact-card p {
+    font-size: 0.9rem;
+  }
 }

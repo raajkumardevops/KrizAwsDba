@@ -4,6 +4,17 @@
   padding-bottom: 90px;
 }
 
+.awards-heading h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.awards-heading p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .award-card {
   background: #f8f9fc;
   border-radius: 18px;
@@ -44,9 +55,88 @@
 .award-card h5 {
   margin-bottom: 14px;
   font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .award-card p {
   color: #6c757d;
   font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .awards-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .awards-heading h2 {
+    font-size: 2rem;
+  }
+
+  .award-card {
+    padding: 34px 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .awards-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .awards-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .awards-heading p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  .award-card {
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .award-icon-wrapper {
+    width: 64px;
+    height: 64px;
+  }
+
+  .award-card h5 {
+    font-size: 1rem;
+  }
+
+  .award-card p {
+    font-size: 0.92rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .awards-heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .award-card {
+    padding: 26px 18px;
+  }
+
+  .award-icon-wrapper {
+    width: 58px;
+    height: 58px;
+  }
+
+  .award-card h5 {
+    font-size: 0.96rem;
+  }
+
+  .award-card p {
+    font-size: 0.9rem;
+  }
 }

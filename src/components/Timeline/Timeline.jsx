@@ -18,7 +18,7 @@ function Timeline() {
     <section className="timeline-section py-5">
       <div className="container">
 
-        <div className="text-center mb-5" data-aos="fade-up">
+        <div className="timeline-heading text-center mb-5" data-aos="fade-up">
           <h2 className="fw-bold">Experience Timeline</h2>
           <p className="text-muted">
             Career progression across enterprise technology leadership.

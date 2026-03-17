@@ -12,7 +12,7 @@ function Certifications() {
     <section className="certifications-section py-5">
       <div className="container">
 
-        <div className="text-center mb-5" data-aos="fade-up">
+        <div className="certifications-heading text-center mb-5" data-aos="fade-up">
           <h2 className="fw-bold">Certifications</h2>
           <p className="text-muted">
             Recognized credentials across cloud and enterprise platforms.

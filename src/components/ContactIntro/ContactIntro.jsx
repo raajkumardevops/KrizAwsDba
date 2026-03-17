@@ -6,14 +6,14 @@ function ContactIntro() {
       <div className="container text-center">
 
         <h2
-          className="fw-bold mb-3"
+          className="fw-bold contact-main-title mb-3"
           data-aos="fade-up"
         >
           Let’s Connect
         </h2>
 
         <p
-          className="text-muted lead mb-4"
+          className="text-muted lead contact-lead mb-4"
           data-aos="fade-up"
           data-aos-delay="200"
         >

@@ -44,9 +44,71 @@
 .expertise-card h5 {
   margin-bottom: 14px;
   font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 .expertise-card p {
   color: #6c757d;
   font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .expertise-cards-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .expertise-card {
+    padding: 34px 24px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .expertise-cards-section {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .expertise-card {
+    padding: 30px 22px;
+    border-radius: 16px;
+  }
+
+  .expertise-icon-wrapper {
+    width: 64px;
+    height: 64px;
+  }
+
+  .expertise-card h5 {
+    font-size: 1rem;
+  }
+
+  .expertise-card p {
+    font-size: 0.92rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .expertise-card {
+    padding: 26px 18px;
+  }
+
+  .expertise-icon-wrapper {
+    width: 58px;
+    height: 58px;
+  }
+
+  .expertise-card h5 {
+    font-size: 0.96rem;
+  }
+
+  .expertise-card p {
+    font-size: 0.9rem;
+  }
 }

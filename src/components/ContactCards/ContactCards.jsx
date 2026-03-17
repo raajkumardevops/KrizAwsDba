@@ -35,7 +35,7 @@ function ContactCards() {
     <section className="contact-cards-section py-5">
       <div className="container">
 
-        <div className="row g-4">
+        <div className="row g-4 justify-content-center">
 
           {contacts.map((item, index) => (
             <div

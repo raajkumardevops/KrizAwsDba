@@ -15,12 +15,12 @@ function ContactCards() {
       value: "linkedin.com/in/krishnan-thiruvengadam",
       link: "https://linkedin.com/in/krishnan-thiruvengadam-598258186/"
     },
-    {
-      icon: <FaPhoneAlt size={28} className="text-primary" />,
-      title: "Phone",
-      value: "+61 406 111 488",
-      link: "tel:+61406111488"
-    }
+    // {
+    //   icon: <FaPhoneAlt size={28} className="text-primary" />,
+    //   title: "Phone",
+    //   value: "+61 406 111 488",
+    //   link: "tel:+61406111488"
+    // }
   ];
 
   const handleClick = (item) => {

@@ -1,5 +1,5 @@
 import "./ContactCards.css";
-import { FaEnvelope, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 function ContactCards() {
   const contacts = [
@@ -7,28 +7,19 @@ function ContactCards() {
       icon: <FaEnvelope size={28} className="text-primary" />,
       title: "Email",
       value: "kriz1111@gmail.com",
-      link: "mailto:kriz1111@gmail.com"
+      link: "https://mail.google.com/mail/?view=cm&fs=1&to=kriz1111@gmail.com"
     },
     {
       icon: <FaLinkedin size={28} className="text-primary" />,
       title: "LinkedIn",
       value: "linkedin.com/in/krishnan-thiruvengadam",
       link: "https://linkedin.com/in/krishnan-thiruvengadam-598258186/"
-    },
-    // {
-    //   icon: <FaPhoneAlt size={28} className="text-primary" />,
-    //   title: "Phone",
-    //   value: "+61 406 111 488",
-    //   link: "tel:+61406111488"
-    // }
+    }
   ];
 
   const handleClick = (item) => {
-    if (item.title === "Email") {
-      window.location.href = item.link;
-    } else {
-      window.open(item.link, item.title === "LinkedIn" ? "_blank" : "_self");
-    }
+    // 🔥 Open everything properly
+    window.open(item.link, "_blank", "noopener,noreferrer");
   };
 
   return (

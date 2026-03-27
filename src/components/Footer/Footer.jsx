@@ -12,10 +12,11 @@ function Footer() {
 
         <div className="footer-links">
 
+          {/* LINKEDIN */}
           <a
             href="https://linkedin.com/in/krishnan-thiruvengadam-598258186/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="footer-link"
           >
             LinkedIn
@@ -23,8 +24,11 @@ function Footer() {
 
           <span className="footer-divider">•</span>
 
+          {/* EMAIL (FIXED) */}
           <a
-            href="mailto:kriz1111@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=kriz1111@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="footer-link"
           >
             Email
@@ -32,6 +36,7 @@ function Footer() {
 
           <span className="footer-divider">•</span>
 
+          {/* LOCATION */}
           <span className="footer-location">
             Sydney, Australia
           </span>

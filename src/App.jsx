@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import AOS from "aos";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -8,6 +8,17 @@ import Expertise from "./pages/Expertise";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
+
+/* 🔥 Scroll to top on route change */
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   useEffect(() => {
@@ -20,6 +31,10 @@ function App() {
 
   return (
     <BrowserRouter>
+
+      {/* 🔥 Fix scroll position on navigation */}
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -28,6 +43,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogDetails />} />
       </Routes>
+
     </BrowserRouter>
   );
 }

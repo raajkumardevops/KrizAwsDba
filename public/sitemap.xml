@@ -1,17 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- MAIN PAGES -->
   <url>
     <loc>https://krizawsdba.com/</loc>
   </url>
-  <url>
-    <loc>https://krizawsdba.com/blog</loc>
-  </url>
+
   <url>
     <loc>https://krizawsdba.com/about</loc>
   </url>
+
   <url>
     <loc>https://krizawsdba.com/expertise</loc>
   </url>
+
   <url>
     <loc>https://krizawsdba.com/contact</loc>
   </url>
+
+  <url>
+    <loc>https://krizawsdba.com/blog</loc>
+  </url>
+
+  <!-- 🔥 BLOG PAGES (ADD HERE) -->
+  <url>
+    <loc>https://krizawsdba.com/blog/aws-cost-optimization</loc>
+  </url>
+
+  <url>
+    <loc>https://krizawsdba.com/blog/sql-server-performance</loc>
+  </url>
+
+  <url>
+    <loc>https://krizawsdba.com/blog/database-security</loc>
+  </url>
+
 </urlset>

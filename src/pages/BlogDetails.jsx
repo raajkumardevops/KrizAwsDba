@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 import blogs from "../data/blogs";
 import "./BlogDetails.css";
+import { Helmet } from "react-helmet-async";
 
 function BlogDetails() {
   const { slug } = useParams();
@@ -15,7 +16,51 @@ function BlogDetails() {
   }
 
   return (
-    <div className="d-flex flex-column min-vh-100" >
+    <div className="d-flex flex-column min-vh-100">
+
+      {/* 🔥 DYNAMIC SEO */}
+      <Helmet>
+        <title>{blog.title} | KrizAWSDBA</title>
+
+        <meta
+          name="description"
+          content={blog.description}
+        />
+
+        <link
+          rel="canonical"
+          href={`https://krizawsdba.com/blog/${blog.slug}`}
+        />
+
+        {/* 🔥 OPEN GRAPH (VERY IMPORTANT) */}
+        <meta property="og:title" content={blog.title} />
+        <meta property="og:description" content={blog.description} />
+        <meta property="og:type" content="article" />
+        <meta
+          property="og:url"
+          content={`https://krizawsdba.com/blog/${blog.slug}`}
+        />
+
+        {/* 🔥 STRUCTURED DATA (BIG BOOST) */}
+        <script type="application/ld+json">
+          {`
+          {
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": "${blog.title}",
+            "description": "${blog.description}",
+            "author": {
+              "@type": "Person",
+              "name": "Krishnan Thiruvengadam"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "KrizAWSDBA"
+            }
+          }
+          `}
+        </script>
+      </Helmet>
 
       <Navbar />
 
@@ -26,16 +71,17 @@ function BlogDetails() {
           {/* 🔙 BACK BUTTON */}
           <button className="back-btn" onClick={() => navigate(-1)}>
             ← Back
-          </button >
+          </button>
 
           {/* 🧠 TITLE */}
-          <h1 className="blog-title" data-aos="fade-right" data-aos-delay="200">{blog.title}</h1>
+          <h1 className="blog-title" data-aos="fade-right" data-aos-delay="200">
+            {blog.title}
+          </h1>
 
           {/* META */}
           <p className="blog-meta">
             By Krishnan Thiruvengadam • AWS Architect & DBA
           </p>
-
 
           {/* 📖 CONTENT */}
           <div className="blog-content" data-aos="fade-down" data-aos-delay="300">

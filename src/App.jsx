@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Expertise from "./pages/Expertise";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import BlogDetails from "./pages/BlogDetails";
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/expertise" element={<Expertise />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<BlogDetails />} />
       </Routes>
     </BrowserRouter>
   );

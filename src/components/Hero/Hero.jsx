@@ -2,8 +2,12 @@ import { ReactTyped } from "react-typed";
 import "./Hero.css";
 import { Link } from "react-router-dom";
 import HeroImage from "../../assets/images/krishna.profile.jpeg";
+import { useState } from "react";
 
 function Hero() {
+
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <section className="hero-section container">
 
@@ -12,13 +16,15 @@ function Hero() {
         <div className="row hero-row gx-5">
 
           {/* LEFT CONTENT */}
-          <div className="col-lg-6 hero-left" data-aos="fade-right">
+          <div className="col-lg-6 hero-left-content" data-aos="fade-right">
 
             <div className="hero-left-inner">
 
-              <h1 className="fw-bold hero-title">KrizAWSDBA</h1>
+              <h1 className="hero-big-text fw-bold">
+                KrizAWSDBA
+              </h1>
 
-              <h3 className="text-primary hero-subtitle mb-3">
+              <h3 className="text-primary hero-subtitle">
                 <ReactTyped
                   strings={["Senior DBA", "AWS Architect – AI"]}
                   typeSpeed={80}
@@ -28,11 +34,11 @@ function Hero() {
                 />
               </h3>
 
-              <p className="text-muted hero-description">
+              <p className="hero-description text-muted">
                 Architecting secure cloud, database, and AI platforms for enterprise-scale financial systems.
               </p>
 
-              <div className="hero-buttons mt-4">
+              <div className="hero-buttons mt-1">
                 <Link to="/expertise" className="custom-primary-btn text-decoration-none">
                   Explore Expertise
                 </Link>
@@ -42,13 +48,8 @@ function Hero() {
                 </Link>
               </div>
 
-              <div className="hero-meta text-muted">
+              <div className="hero-meta text-muted mb-3">
                 15+ Years Experience | AWS Certified | Global Enterprise Delivery
-              </div>
-
-              <div className="scroll-indicator">
-                <span>Scroll to explore</span>
-                <div className="scroll-arrow"></div>
               </div>
 
             </div>
@@ -56,8 +57,11 @@ function Hero() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="col-lg-6 hero-right" data-aos="fade-left">
-            <div className="hero-image-wrapper">
+          <div className="col-lg-6 hero-right-image" data-aos="fade-left">
+            <div
+              className="hero-image-wrapper clickable"
+              onClick={() => setShowModal(true)}
+            >
               <img src={HeroImage} alt="profile" className="hero-image" />
             </div>
           </div>
@@ -65,6 +69,14 @@ function Hero() {
         </div>
 
       </div>
+
+      {/* 🔥 IMAGE MODAL */}
+      {showModal && (
+        <div className="image-modal" onClick={() => setShowModal(false)}>
+          <img src={HeroImage} alt="full" className="modal-image" />
+          <span className="close-btn">&times;</span>
+        </div>
+      )}
 
     </section>
   );

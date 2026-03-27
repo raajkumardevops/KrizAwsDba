@@ -1,16 +1,17 @@
-import { FaAws, FaDatabase } from "react-icons/fa";
-import { MdOutlineMemory } from "react-icons/md";
+import { FaAws, FaDatabase, FaServer, FaChartLine, FaRobot } from "react-icons/fa";
 import "./BlogPreview.css";
 
 function BlogPreview() {
   return (
     <section className="container py-5 blog-preview-section">
+      
       <h2 className="blog-title text-center mb-5" data-aos="fade-up">
-        KrizAWSDBA <span className="text-primary">Insights</span>
+        KrizAWSDBA <span className="text-primary">Skills</span>
       </h2>
 
       <div className="row g-4 justify-content-center">
 
+        {/* AWS */}
         <div
           className="col-lg-4 col-md-6 col-12"
           data-aos="fade-up"
@@ -20,10 +21,11 @@ function BlogPreview() {
             <div className="mb-3 blog-icon">
               <FaAws size={42} className="text-primary" />
             </div>
-            <h5>AWS Cost Optimization in Enterprise Systems</h5>
+            <h5>AWS Cloud Architecture</h5>
           </div>
         </div>
 
+        {/* DATABASE */}
         <div
           className="col-lg-4 col-md-6 col-12"
           data-aos="fade-up"
@@ -33,10 +35,11 @@ function BlogPreview() {
             <div className="mb-3 blog-icon">
               <FaDatabase size={42} className="text-primary" />
             </div>
-            <h5>Database Security for Banking Platforms</h5>
+            <h5>SQL Server & Database Management</h5>
           </div>
         </div>
 
+        {/* HA/DR */}
         <div
           className="col-lg-4 col-md-6 col-12"
           data-aos="fade-up"
@@ -44,9 +47,37 @@ function BlogPreview() {
         >
           <div className="card blog-card p-4 h-100 text-center">
             <div className="mb-3 blog-icon">
-              <MdOutlineMemory size={42} className="text-primary" />
+              <FaServer size={42} className="text-primary" />
             </div>
-            <h5>AI in Financial Data Architecture</h5>
+            <h5>High Availability & Disaster Recovery</h5>
+          </div>
+        </div>
+
+        {/* PERFORMANCE */}
+        <div
+          className="col-lg-4 col-md-6 col-12"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div className="card blog-card p-4 h-100 text-center">
+            <div className="mb-3 blog-icon">
+              <FaChartLine size={42} className="text-primary" />
+            </div>
+            <h5>Performance Optimization</h5>
+          </div>
+        </div>
+
+        {/* AI */}
+        <div
+          className="col-lg-4 col-md-6 col-12"
+          data-aos="fade-up"
+          data-aos-delay="500"
+        >
+          <div className="card blog-card p-4 h-100 text-center">
+            <div className="mb-3 blog-icon">
+              <FaRobot size={42} className="text-primary" />
+            </div>
+            <h5>AI & Data Engineering</h5>
           </div>
         </div>
 

@@ -1,7 +1,7 @@
 /* ================= HERO SECTION ================= */
 
 .hero-section {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 /* ================= HERO CARD ================= */
@@ -10,7 +10,7 @@
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(12px);
   border-radius: 20px;
-  padding: 50px 60px;
+  padding: 60px 70px;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
 }
 
@@ -24,19 +24,21 @@
 
 /* ================= LEFT CONTENT ================= */
 
-.hero-left {
+.hero-left-content {
   display: flex;
   align-items: center;
 }
 
 .hero-left-inner {
   max-width: 520px;
-  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
 /* ================= RIGHT IMAGE ================= */
 
-.hero-right {
+.hero-right-image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,86 +46,93 @@
 
 /* ================= TYPOGRAPHY ================= */
 
-.hero-title {
-  font-size: 3.4rem;
-  margin-bottom: 14px;
+.hero-big-text {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #111;
 }
 
 .hero-subtitle {
-  font-size: 2rem;
-  margin-bottom: 16px;
+  font-size: 1.8rem;
+  color: #0d6efd;
 }
 
 .hero-description {
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.8;
+  color: #6c757d;
 }
 
 /* ================= BUTTONS ================= */
 
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .custom-primary-btn {
   background-color: #0d6efd !important;
-  color: white !important;
-  padding: 10px 24px;
+  color: #fff !important;
+  padding: 12px 26px;
   border-radius: 8px;
-  margin-right: 10px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.custom-primary-btn:hover {
+  background-color: transparent !important;
+  color: #0d6efd !important;
+  border: 1px solid #0d6efd;
+  transform: translateY(-2px);
 }
 
 .custom-outline-btn {
   border: 1px solid #0d6efd;
   color: #0d6efd;
-  padding: 10px 24px;
+  padding: 12px 26px;
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.custom-outline-btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  border: 1px solid #0d6efd;
+  transform: translateY(-2px);
+}
+
+/* ================= META ================= */
+
+.hero-meta {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #6c757d;
 }
 
 /* ================= IMAGE ================= */
 
 .hero-image-wrapper {
-  width: 260px;
-  height: 260px;
+  width: 320px;
+  height: 320px;
   position: relative;
 }
 
 .hero-image-wrapper::before {
   content: "";
   position: absolute;
-  inset: -5px;
+  inset: -6px;
   background: linear-gradient(135deg, #6f42c1, #e83e8c);
-  border-radius: 50%;
+  border-radius: 20px;
 }
 
 .hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 20px;
   position: relative;
-}
-
-/* ================= SCROLL ================= */
-
-.scroll-indicator {
-  margin-top: 25px;
-  font-size: 0.9rem;
-  color: #6c757d;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.scroll-arrow {
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid #6c757d;
-  border-bottom: 2px solid #6c757d;
-  transform: rotate(45deg);
-  animation: scrollBounce 1.5s infinite;
-}
-
-@keyframes scrollBounce {
-  50% {
-    transform: rotate(45deg) translateY(6px);
-  }
 }
 
 /* ================= TABLET ================= */
@@ -138,27 +147,31 @@
     text-align: center;
   }
 
-  .hero-left-inner {
-    margin-left: 0;
-    max-width: 100%;
+  .hero-left-content {
+    order: 1;
   }
 
-  .hero-title {
-    font-size: 2.6rem;
+  .hero-right-image {
+    order: 2;
+    margin-top: 30px;
+  }
+
+  .hero-left-inner {
+    max-width: 100%;
+    gap: 18px;
+  }
+
+  .hero-big-text {
+    font-size: 2.4rem;
   }
 
   .hero-subtitle {
-    font-size: 1.7rem;
-  }
-
-  .hero-description {
-    margin: 0 auto;
+    font-size: 1.6rem;
   }
 
   .hero-image-wrapper {
-    margin-top: 30px;
-    width: 240px;
-    height: 240px;
+    width: 260px;
+    height: 260px;
   }
 }
 
@@ -166,59 +179,44 @@
 
 @media (max-width: 768px) {
   .hero-section {
-    padding: 50px 0;
+    padding: 60px 12px; /* 🔥 SIDE SPACE FIX */
   }
 
   .hero-card {
-    padding: 30px 20px;
+    padding: 30px 16px; /* 🔥 REDUCED SIDE PADDING */
   }
 
-  .hero-title {
-    font-size: 2.2rem;
+  .hero-left-inner {
+    gap: 16px;
+  }
+
+  .hero-big-text {
+    font-size: 2rem;
   }
 
   .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 
   .hero-description {
     font-size: 1rem;
   }
 
+  /* 🔥 BUTTON FIX */
   .hero-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .custom-primary-btn,
-.custom-outline-btn {
-  padding: 10px 22px;
-  border-radius: 8px;
-  display: inline-block;
-  white-space: nowrap;
-      min-width: 140px;
+  .custom-outline-btn {
+    width: 100%;
+    max-width: 280px;
     text-align: center;
-}
-
-  .hero-buttons {
-  margin-top: 20px;
-  margin-bottom: 20px; /* 🔥 IMPORTANT FIX */
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-  .hero-meta {
-
-    margin-top: 10px;
-    line-height: 1.6;
   }
 
-  .scroll-indicator {
-    justify-content: center;
-  }
+  /* 🔥 IMAGE SPACING FIX */
 
   .hero-image-wrapper {
     width: 220px;
@@ -229,8 +227,8 @@
 /* ================= SMALL MOBILE ================= */
 
 @media (max-width: 480px) {
-  .hero-title {
-    font-size: 1.9rem;
+  .hero-big-text {
+    font-size: 1.7rem;
   }
 
   .hero-subtitle {
@@ -245,4 +243,50 @@
     width: 200px;
     height: 200px;
   }
+}
+
+/* ================= IMAGE CLICK EFFECT ================= */
+
+.clickable {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.clickable:hover {
+  transform: scale(1.03);
+}
+
+/* ================= MODAL ================= */
+
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* ================= MODAL IMAGE ================= */
+
+.modal-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ================= CLOSE BUTTON ================= */
+
+.close-btn {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
 }

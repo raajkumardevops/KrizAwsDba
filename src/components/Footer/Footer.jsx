@@ -2,14 +2,12 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer className="custom-footer text-center py-4 mt-5">
-      <div className="container"
-      // data-aos="fade-up"
-      // data-aos-delay="50"
-      >
+    <footer className="custom-footer">
 
-        <p className="footer-copy mb-3">
-          © 2026 KrizAWSDBA | All Rights Reserved
+      <div className="container footer-container">
+
+        <p className="footer-copy">
+          © 2026 <span className="brand">KrizAWSDBA</span> | All Rights Reserved
         </p>
 
         <div className="footer-links">
@@ -23,7 +21,7 @@ function Footer() {
             LinkedIn
           </a>
 
-          <span className="footer-divider">|</span>
+          <span className="footer-divider">•</span>
 
           <a
             href="mailto:kriz1111@gmail.com"
@@ -32,12 +30,16 @@ function Footer() {
             Email
           </a>
 
-          <span className="footer-divider">|</span>
+          <span className="footer-divider">•</span>
 
-          <span className="footer-location">Sydney, Australia</span>
+          <span className="footer-location">
+            Sydney, Australia
+          </span>
 
         </div>
+
       </div>
+
     </footer>
   );
 }

@@ -1,6 +1,39 @@
 import "./Footer.css";
+import { FaCopy } from "react-icons/fa";
 
 function Footer() {
+
+  // 🔥 Detect Mobile
+  const isMobile = () => {
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  };
+
+  // 🔥 Handle Email Click
+  const handleEmailClick = (e) => {
+    e.preventDefault();
+
+    const email = "kriz1111@gmail.com";
+
+    if (isMobile()) {
+      // 📱 Mobile → open mail app
+      window.location.href = `mailto:${email}`;
+    } else {
+      // 💻 Desktop → open Gmail
+      window.open(
+        `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`,
+        "_blank",
+        "noopener,noreferrer"
+      );
+    }
+  };
+
+  // 🔥 Copy Email
+  const handleCopy = (e) => {
+    e.stopPropagation();
+    navigator.clipboard.writeText("kriz1111@gmail.com");
+    alert("Email copied!");
+  };
+
   return (
     <footer className="custom-footer">
 
@@ -24,15 +57,22 @@ function Footer() {
 
           <span className="footer-divider">•</span>
 
-          {/* EMAIL (FIXED) */}
+          {/* EMAIL (SMART HANDLER) */}
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=kriz1111@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/"
+            onClick={handleEmailClick}
             className="footer-link"
           >
             Email
           </a>
+
+          {/* 🔥 COPY BUTTON */}
+          <button
+            className="footer-copy-btn"
+            onClick={handleCopy}
+          >
+            <FaCopy size={12} />
+          </button>
 
           <span className="footer-divider">•</span>
 

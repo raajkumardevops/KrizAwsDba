@@ -127,3 +127,17 @@
     font-size: 0.95rem;
   }
 }
+
+.footer-copy-btn {
+  border: none;
+  background: transparent;
+  color: #0d6efd;
+  cursor: pointer;
+  margin-left: 6px;
+  transition: 0.3s ease;
+}
+
+.footer-copy-btn:hover {
+  color: #084298;
+  transform: translateY(-1px);
+}

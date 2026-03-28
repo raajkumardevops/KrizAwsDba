@@ -17,8 +17,7 @@ function ContactIntro() {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Open for cloud architecture consulting, enterprise transformation,
-          and technical discussions.
+          Get in touch with Krishnan Thiruvengadam, Whether you’re looking for database optimization, cloud transformation, or AI-driven solutions, Krishnan is available to collaborate and deliver scalable, secure, and high-performance systems tailored to your business needs.
         </p>
 
         <p

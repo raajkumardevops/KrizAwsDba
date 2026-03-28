@@ -14,7 +14,7 @@ function BlogIntro() {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Cloud architecture, database modernization, AI, and enterprise transformation insights.
+          Krishnan Thiruvengadam has experienced in cloud architecture, SQL Server, database modernization, and AI-driven enterprise systems. His expertise spans large-scale financial platforms, cloud transformation strategies, and intelligent data solutions that drive business performance and innovation.
         </p>
 
         <p

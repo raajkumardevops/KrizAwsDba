@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar/Navbar";
 import BlogIntro from "../components/BlogIntro/BlogIntro";
 import Footer from "../components/Footer/Footer";
 import BlogCards from "../components/BlogCards/BlogCards";
-import blogs from "../data/blogs"; // ✅ IMPORT DATA
+import blogs from "../data/blogs"; 
 import { Helmet } from "react-helmet-async";
 
 function Blog() {

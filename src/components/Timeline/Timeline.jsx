@@ -21,7 +21,7 @@ function Timeline() {
         <div className="timeline-heading text-center mb-5" data-aos="fade-up">
           <h2 className="fw-bold"><span className="text-primary"> Experience</span> Timeline</h2>
           <p className="text-muted">
-            Career progression across enterprise technology leadership.
+             Krishnan Thiruvengadam Career progression across enterprise technology leadership.
           </p>
         </div>
 

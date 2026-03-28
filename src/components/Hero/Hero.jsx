@@ -48,9 +48,13 @@ function Hero() {
                 </Link>
               </div>
 
-              <div className="hero-meta text-muted mb-3">
+              <div className="hero-meta text-muted mb-2">
                 15+ Years Experience | AWS Certified | Global Enterprise Delivery
               </div>
+
+              <p className="hero-description text-muted mb-5"> 
+                Krishnan Thiruvengadam is a Senior DBA and AWS Architect with over 15 years of experience in SQL Server, cloud architecture, and enterprise database systems. Krishnan specializes in AWS cloud solutions, database optimization, and AI-driven data platforms.
+              </p>
 
             </div>
 

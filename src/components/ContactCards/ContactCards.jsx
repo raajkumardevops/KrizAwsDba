@@ -1,25 +1,53 @@
 import "./ContactCards.css";
-import { FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaCopy } from "react-icons/fa";
 
 function ContactCards() {
+
   const contacts = [
     {
       icon: <FaEnvelope size={28} className="text-primary" />,
       title: "Email",
       value: "kriz1111@gmail.com",
-      link: "https://mail.google.com/mail/?view=cm&fs=1&to=kriz1111@gmail.com"
+      type: "email"
     },
     {
       icon: <FaLinkedin size={28} className="text-primary" />,
       title: "LinkedIn",
       value: "linkedin.com/in/krishnan-thiruvengadam",
-      link: "https://linkedin.com/in/krishnan-thiruvengadam-598258186/"
+      link: "https://linkedin.com/in/krishnan-thiruvengadam-598258186/",
+      type: "external"
     }
   ];
 
+  // 🔥 Detect Mobile Device
+  const isMobile = () => {
+    return /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  };
+
   const handleClick = (item) => {
-    // 🔥 Open everything properly
-    window.open(item.link, "_blank", "noopener,noreferrer");
+    if (item.type === "email") {
+
+      if (isMobile()) {
+        // 📱 Mobile → open mail app
+        window.location.href = `mailto:${item.value}`;
+      } else {
+        // 💻 Desktop → open Gmail compose
+        window.open(
+          `https://mail.google.com/mail/?view=cm&fs=1&to=${item.value}`,
+          "_blank",
+          "noopener,noreferrer"
+        );
+      }
+
+    } else {
+      window.open(item.link, "_blank", "noopener,noreferrer");
+    }
+  };
+
+  const handleCopy = (text, e) => {
+    e.stopPropagation();
+    navigator.clipboard.writeText(text);
+    alert("Email copied!");
   };
 
   return (
@@ -45,7 +73,20 @@ function ContactCards() {
                 </div>
 
                 <h5>{item.title}</h5>
-                <p>{item.value}</p>
+
+                <p className="contact-value">
+                  {item.value}
+                </p>
+
+                {/* 🔥 Copy button */}
+                {item.type === "email" && (
+                  <button
+                    className="copy-btn"
+                    onClick={(e) => handleCopy(item.value, e)}
+                  >
+                    <FaCopy size={14} /> Copy
+                  </button>
+                )}
 
               </div>
             </div>

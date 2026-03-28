@@ -118,3 +118,26 @@
     font-size: 0.9rem;
   }
 }
+
+.contact-value {
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.copy-btn {
+  margin-top: 8px;
+  border: none;
+  background: transparent;
+  color: #0d6efd;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s ease;
+}
+
+.copy-btn:hover {
+  color: #084298;
+  transform: translateY(-1px);
+}

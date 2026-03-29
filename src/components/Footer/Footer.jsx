@@ -28,11 +28,11 @@ function Footer() {
   };
 
   // 🔥 Copy Email
-  const handleCopy = (e) => {
-    e.stopPropagation();
-    navigator.clipboard.writeText("kriz1111@gmail.com");
-    alert("Email copied!");
-  };
+  // const handleCopy = (e) => {
+  //   e.stopPropagation();
+  //   navigator.clipboard.writeText("kriz1111@gmail.com");
+  //   alert("Email copied!");
+  // };
 
   return (
     <footer className="custom-footer">
@@ -67,12 +67,12 @@ function Footer() {
           </a>
 
           {/* 🔥 COPY BUTTON */}
-          <button
+          {/* <button
             className="footer-copy-btn"
             onClick={handleCopy}
           >
             <FaCopy size={12} />
-          </button>
+          </button> */}
 
           <span className="footer-divider">•</span>
 

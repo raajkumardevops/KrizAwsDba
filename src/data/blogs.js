@@ -5,23 +5,30 @@ const blogs = [
     title: "Complete Guide: Migrating SQL Server to AWS (RDS vs EC2)",
     description:
       "Step-by-step guide to migrate SQL Server workloads to AWS using RDS and EC2 with performance and cost optimization strategies.",
+    keywords:
+      "SQL Server migration to AWS, AWS RDS vs EC2, SQL Server AWS migration guide, cloud database migration",
+
+    image: "blog/aws-migration.png",
+
     content: `
-Migrating SQL Server to AWS is a critical step for modern enterprises aiming for scalability and reliability.
+Migrating SQL Server to AWS is one of the most effective strategies for modern enterprises aiming for scalability, performance, and reliability.
+
+AWS SQL Server migration helps organizations reduce infrastructure cost and improve system availability.
 
 1. Understanding RDS vs EC2
-Amazon RDS provides managed database services, while EC2 gives full control over SQL Server deployment.
+Amazon RDS provides managed SQL Server services, while EC2 gives full control over database configuration and tuning.
 
 2. Migration Strategies
-Use AWS DMS or backup/restore methods depending on workload size and downtime tolerance.
+You can migrate SQL Server to AWS using AWS DMS, backup and restore, or replication depending on workload size.
 
-3. Cost Optimization
-Choose the right instance type and leverage reserved instances to reduce cost.
+3. AWS Cost Optimization
+Choose the right instance type and leverage reserved instances to reduce AWS cloud costs.
 
 4. Real-world Implementation
-Many financial systems migrate to AWS for better performance and disaster recovery.
+Many enterprise banking systems migrate SQL Server to AWS for high availability and disaster recovery.
 
 Conclusion:
-AWS migration enables scalability, high availability, and cost efficiency.
+Migrating SQL Server to AWS improves scalability, performance, and cost efficiency.
     `,
   },
 
@@ -31,23 +38,28 @@ AWS migration enables scalability, high availability, and cost efficiency.
     title: "Top 10 SQL Server Performance Tuning Techniques Every DBA Must Know",
     description:
       "Improve SQL Server performance using indexing strategies, execution plans, and query optimization techniques.",
+    keywords:
+      "SQL Server performance tuning, optimize SQL queries, database performance improvement, SQL indexing techniques",
+
+    image: "blog/sql-performance.png",
+
     content: `
-Performance tuning is essential for maintaining efficient database systems.
+SQL Server performance tuning is essential for maintaining high-performing enterprise database systems.
 
 1. Index Optimization
-Use proper indexing to speed up query performance.
+Proper indexing significantly improves SQL query performance and reduces execution time.
 
 2. Execution Plans
-Analyze execution plans to identify bottlenecks.
+Analyze execution plans to identify bottlenecks and optimize query performance.
 
 3. Query Optimization
-Rewrite inefficient queries to reduce load.
+Rewrite inefficient SQL queries to reduce CPU and memory usage.
 
 4. Monitoring Tools
-Use SQL Server Profiler and DMVs for tracking performance.
+Use SQL Server Profiler and DMVs to monitor database performance in real-time.
 
 Conclusion:
-Optimizing SQL Server ensures faster applications and better user experience.
+SQL Server performance tuning ensures faster applications and better user experience.
     `,
   },
 
@@ -57,23 +69,28 @@ Optimizing SQL Server ensures faster applications and better user experience.
     title: "How AI is Transforming SQL Server Performance Monitoring",
     description:
       "Explore how AI-powered tools help monitor, predict, and optimize SQL Server performance in modern systems.",
+    keywords:
+      "AI in SQL Server, database AI monitoring, AI database optimization, intelligent database systems",
+
+    image: "blog/ai-sql.png",
+
     content: `
-Artificial Intelligence is revolutionizing database management.
+Artificial Intelligence is transforming SQL Server performance monitoring and database management.
 
 1. Predictive Analytics
-AI predicts failures before they happen.
+AI predicts SQL Server failures before they occur, reducing downtime.
 
 2. Auto Tuning
-Automatically adjusts queries and indexes.
+AI automatically optimizes queries and indexes for better performance.
 
 3. Smart Alerts
-Detect anomalies in real-time.
+AI detects anomalies in real-time database systems.
 
-4. Real-world Use Cases
-Banks and enterprises use AI for monitoring large databases.
+4. Enterprise Use Cases
+Banks and financial systems use AI for managing large-scale SQL Server environments.
 
 Conclusion:
-AI enhances performance, reduces downtime, and improves efficiency.
+AI improves SQL Server performance, reduces downtime, and enhances efficiency.
     `,
   },
 
@@ -83,23 +100,28 @@ AI enhances performance, reduces downtime, and improves efficiency.
     title: "AWS Cost Optimization for Databases: Save 40% Without Performance Loss",
     description:
       "Learn proven strategies to reduce AWS database costs while maintaining performance and scalability.",
+    keywords:
+      "AWS cost optimization strategies, reduce AWS cost, cloud cost optimization, AWS database cost saving",
+
+    image: "blog/aws-cost.png",
+
     content: `
-Cost optimization is crucial in cloud environments.
+AWS cost optimization is critical for managing cloud infrastructure efficiently.
 
 1. Reserved Instances
-Save money by committing to long-term usage.
+Use reserved instances to significantly reduce AWS database costs.
 
 2. Storage Optimization
-Use appropriate storage classes.
+Choose appropriate storage classes to minimize expenses.
 
 3. Monitoring Usage
-Track usage with AWS Cost Explorer.
+Track usage with AWS Cost Explorer and optimize resources.
 
-4. Scaling Strategies
-Auto-scale resources based on demand.
+4. Auto Scaling
+Scale resources dynamically based on demand to avoid over-provisioning.
 
 Conclusion:
-Effective cost optimization ensures maximum ROI from AWS services.
+AWS cost optimization helps organizations save money while maintaining performance.
     `,
   },
 
@@ -109,23 +131,28 @@ Effective cost optimization ensures maximum ROI from AWS services.
     title: "SQL Server Security Best Practices for Enterprise Applications",
     description:
       "Secure SQL Server environments using encryption, access control, and auditing techniques.",
+    keywords:
+      "SQL Server security best practices, database security, SQL encryption, enterprise database security",
+
+    image: "blog/sql-security.png",
+
     content: `
-Security is critical in enterprise databases.
+SQL Server security is essential for protecting sensitive enterprise data.
 
 1. Role-Based Access
-Restrict access based on roles.
+Implement role-based access control to secure database systems.
 
 2. Encryption
-Use TDE and SSL for data protection.
+Use Transparent Data Encryption (TDE) and SSL for data protection.
 
 3. Auditing
-Track database activities.
+Track database activity to detect suspicious actions.
 
 4. Backup Security
-Secure backups to prevent data leaks.
+Secure database backups to prevent data breaches.
 
 Conclusion:
-Strong security practices protect sensitive data and ensure compliance.
+Strong SQL Server security practices ensure data protection and compliance.
     `,
   },
 ];

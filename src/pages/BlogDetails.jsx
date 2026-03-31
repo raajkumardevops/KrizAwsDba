@@ -18,21 +18,19 @@ function BlogDetails() {
   return (
     <div className="d-flex flex-column min-vh-100">
 
-      {/* 🔥 DYNAMIC SEO */}
+      {/* 🔥 SEO */}
       <Helmet>
         <title>{blog.title} | KrizAWSDBA</title>
 
-        <meta
-          name="description"
-          content={blog.description}
-        />
+        <meta name="description" content={blog.description} />
+        <meta name="keywords" content={blog.keywords} />
 
         <link
           rel="canonical"
           href={`https://krizawsdba.com/blog/${blog.slug}`}
         />
 
-        {/* 🔥 OPEN GRAPH (VERY IMPORTANT) */}
+        {/* OPEN GRAPH */}
         <meta property="og:title" content={blog.title} />
         <meta property="og:description" content={blog.description} />
         <meta property="og:type" content="article" />
@@ -40,8 +38,12 @@ function BlogDetails() {
           property="og:url"
           content={`https://krizawsdba.com/blog/${blog.slug}`}
         />
+        <meta
+          property="og:image"
+          content={`https://krizawsdba.com/${blog.image}`}
+        />
 
-        {/* 🔥 STRUCTURED DATA (BIG BOOST) */}
+        {/* STRUCTURED DATA */}
         <script type="application/ld+json">
           {`
           {
@@ -49,6 +51,7 @@ function BlogDetails() {
             "@type": "BlogPosting",
             "headline": "${blog.title}",
             "description": "${blog.description}",
+            "image": "https://krizawsdba.com/${blog.image}",
             "author": {
               "@type": "Person",
               "name": "Krishnan Thiruvengadam"
@@ -56,7 +59,9 @@ function BlogDetails() {
             "publisher": {
               "@type": "Organization",
               "name": "KrizAWSDBA"
-            }
+            },
+            "datePublished": "2026-03-31",
+            "dateModified": "2026-03-31"
           }
           `}
         </script>
@@ -66,27 +71,36 @@ function BlogDetails() {
 
       <main className="blog-details-container flex-grow-1">
 
-        <div className="container" data-aos="fade-down" data-aos-delay="200">
+        <div className="container blog-wrapper" data-aos="fade-up">
 
-          {/* 🔙 BACK BUTTON */}
+          {/* 🔙 BACK */}
           <button className="back-btn" onClick={() => navigate(-1)}>
             ← Back
           </button>
 
-          {/* 🧠 TITLE */}
-          <h1 className="blog-title" data-aos="fade-right" data-aos-delay="200">
-            {blog.title}
-          </h1>
+          {/* TITLE */}
+          <h1 className="blog-title">{blog.title}</h1>
 
           {/* META */}
           <p className="blog-meta">
             By Krishnan Thiruvengadam • AWS Architect & DBA
           </p>
 
-          {/* 📖 CONTENT */}
-          <div className="blog-content" data-aos="fade-down" data-aos-delay="300">
+          {/* IMAGE */}
+          {blog.image && (
+            <div className="blog-image-wrapper">
+              <img
+                src={`/${blog.image}`}
+                alt={`${blog.title} illustration`}
+                className="blog-image"
+              />
+            </div>
+          )}
+
+          {/* CONTENT */}
+          <div className="blog-content">
             {blog.content.split("\n").map((line, index) => (
-              <p key={index}>{line}</p>
+              <p key={index}>{line.trim()}</p>
             ))}
           </div>
 
@@ -95,7 +109,6 @@ function BlogDetails() {
       </main>
 
       <Footer />
-
     </div>
   );
 }

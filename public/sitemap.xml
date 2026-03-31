@@ -24,15 +24,27 @@
 
   <!-- 🔥 BLOG PAGES (ADD HERE) -->
   <url>
+    <loc>https://krizawsdba.com/blog/aws-sql-server-migration</loc>
+  </url>
+
+  <url>
+    <loc>https://krizawsdba.com/blog/sql-performance-tuning</loc>
+  </url>
+
+  <url>
+    <loc>https://krizawsdba.com/blog/ai-in-sql-server</loc>
+  </url>
+  ///////
+  <url>
     <loc>https://krizawsdba.com/blog/aws-cost-optimization</loc>
   </url>
 
   <url>
-    <loc>https://krizawsdba.com/blog/sql-server-performance</loc>
+    <loc>https://krizawsdba.com/blog/sql-server-security</loc>
   </url>
 
-  <url>
+  <!-- <url>
     <loc>https://krizawsdba.com/blog/database-security</loc>
-  </url>
+  </url> -->
 
 </urlset>

@@ -8,7 +8,7 @@ const blogs = [
     keywords:
       "SQL Server migration to AWS, AWS RDS vs EC2, SQL Server AWS migration guide, cloud database migration",
 
-    image: "blog/aws-migration.png",
+    image: "blog/aws-migration.webp",
 
     content: `
 Migrating SQL Server to AWS is one of the most effective strategies for modern enterprises aiming for scalability, performance, and reliability.
@@ -41,7 +41,7 @@ Migrating SQL Server to AWS improves scalability, performance, and cost efficien
     keywords:
       "SQL Server performance tuning, optimize SQL queries, database performance improvement, SQL indexing techniques",
 
-    image: "blog/sql-performance.png",
+    image: "blog/sql-performance.webp",
 
     content: `
 SQL Server performance tuning is essential for maintaining high-performing enterprise database systems.
@@ -72,7 +72,7 @@ SQL Server performance tuning ensures faster applications and better user experi
     keywords:
       "AI in SQL Server, database AI monitoring, AI database optimization, intelligent database systems",
 
-    image: "blog/ai-sql.png",
+    image: "blog/ai-sql.webp",
 
     content: `
 Artificial Intelligence is transforming SQL Server performance monitoring and database management.
@@ -103,7 +103,7 @@ AI improves SQL Server performance, reduces downtime, and enhances efficiency.
     keywords:
       "AWS cost optimization strategies, reduce AWS cost, cloud cost optimization, AWS database cost saving",
 
-    image: "blog/aws-cost.png",
+    image: "blog/aws-cost.webp",
 
     content: `
 AWS cost optimization is critical for managing cloud infrastructure efficiently.
@@ -134,7 +134,7 @@ AWS cost optimization helps organizations save money while maintaining performan
     keywords:
       "SQL Server security best practices, database security, SQL encryption, enterprise database security",
 
-    image: "blog/sql-security.png",
+    image: "blog/sql-security.webp",
 
     content: `
 SQL Server security is essential for protecting sensitive enterprise data.
